@@ -18,17 +18,19 @@ public class main {
         line l2 = new line();
 
         l2.p3 = new point();
-        l2.p3.x = 100;
-        l2.p3.y = 200;
+        l2.p3.x = 1;
+        l2.p3.y = 2;
 
         l2.p4 = new point();
-        l2.p4.x = 500;
-        l2.p4.y = 700;
+        l2.p4.x = 5;
+        l2.p4.y = 7;
 
         float length1 = l1.getLength();
         System.out.println(length1);
 
         float length2 = l2.length();
         System.out.println(length2);
+
+        line.checkEqual(length1,length2);
     }
 }
